@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,s;
+    while(scanf("%d",&n)!=EOF)
+    {
+        s=0;
+        while(n>2)
+        {
+        i=n%3;
+        s+=n-i;
+        n=n/3+i;
+        }
+        printf("%d\n",s+n);
+    }
+}
